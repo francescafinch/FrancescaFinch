@@ -4812,3 +4812,12 @@ section {
         gap: 12px;
     }
 }
+
+/* MOBILE NAV FIX — force solid background on mobile menu */
+@media (max-width: 768px) {
+    .nav__links.active {
+        background: #FFFFFF !important;
+        background-color: #FFFFFF !important;
+        z-index: 1001 !important;
+    }
+}
