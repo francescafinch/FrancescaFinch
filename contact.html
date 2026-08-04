@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Francesca Finch | Book Discovery Strategist</title>
+    <meta name="description" content="Get in touch for a free book discoverability audit. Email-based, async process. No calls required. Response within 2 business days.">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="nav" id="nav">
+        <div class="container nav__inner">
+            <a href="index.html" class="nav__logo">Francesca<span>Finch</span></a>
+            <ul class="nav__links" id="navLinks">
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="process.html">Process</a></li>
+                <li><a href="results.html">Results</a></li>
+                <li><a href="genres.html">Genres</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html" class="nav__cta">Free Audit</a></li>
+            </ul>
+            <button class="nav__toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="contact-hero">
+        <div class="container fade-in">
+            <span class="section-label">Contact</span>
+            <h1 class="section-title" style="font-size: clamp(2rem, 4vw, 3rem);">Let's Get Your Book Found</h1>
+            <p class="section-subtitle">Fill out the form below and I'll get back to you within 2 business days. No phone calls, no booking widget — just a simple form and a real reply from me.</p>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM + INFO -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact__grid">
+                <div class="contact-form fade-in" id="contactForm">
+                    <form id="form" action="https://formspree.io/f/mvzeelrj" method="POST">
+                        <div class="form-group">
+                            <label for="name">Your Name <span>*</span></label>
+                            <input type="text" id="name" name="name" required placeholder="First and last name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address <span>*</span></label>
+                            <input type="email" id="email" name="email" required placeholder="you@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="book-title">Book Title <span>*</span></label>
+                            <input type="text" id="book-title" name="book_title" required placeholder="Title of your book">
+                        </div>
+                        <div class="form-group">
+                            <label for="genre">Genre / Category <span>*</span></label>
+                            <input type="text" id="genre" name="genre" required placeholder="e.g. Cozy Mystery, Epic Fantasy, Contemporary Romance">
+                        </div>
+                        <div class="form-group">
+                            <label for="distributor">Current Distributor</label>
+                            <select id="distributor" name="distributor">
+                                <option value="" disabled selected>Select your distributor</option>
+                                <option value="KDP Exclusive (Kindle Unlimited)">KDP Exclusive (Kindle Unlimited)</option>
+                                <option value="KDP Wide">KDP (non-exclusive / wide)</option>
+                                <option value="IngramSpark">IngramSpark</option>
+                                <option value="Draft2Digital">Draft2Digital</option>
+                                <option value="Multiple">Multiple distributors</option>
+                                <option value="Not published yet">Not published yet</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="amazon-link">Amazon Link (if published)</label>
+                            <input type="url" id="amazon-link" name="amazon_link" placeholder="https://www.amazon.com/dp/...">
+                        </div>
+                        <div class="form-group">
+                            <label for="challenge">What's Your Current Challenge? <span>*</span></label>
+                            <textarea id="challenge" name="challenge" required placeholder="Tell me what's going on — low visibility, struggling with categories, planning a launch, or anything else. The more detail the better."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary">Send Message</button>
+                    </form>
+                    <div class="form-success" id="formSuccess">
+                        <div class="form-success__icon">✓</div>
+                        <h3>Message Sent</h3>
+                        <p>Thank you! I'll review your details and get back to you within 2 business days.</p>
+                    </div>
+                </div>
+
+                <div class="contact-info fade-in">
+                    <h3 class="contact-info__title">Direct Contact</h3>
+
+                    <div class="contact-info__item">
+                        <div class="contact-info__icon">✉</div>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:hellofrancescafinch.uk@gmail.com">hellofrancescafinch.uk@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-info__item">
+                        <div class="contact-info__icon">𝕏</div>
+                        <div>
+                            <h4>X (Twitter)</h4>
+                            <a href="https://twitter.com/" target="_blank" rel="noopener"> </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-info__item">
+                        <div class="contact-info__icon">◉</div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Scotland, UK<br>Working with authors worldwide</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info__item">
+                        <div class="contact-info__icon">◔</div>
+                        <div>
+                            <h4>Response Time</h4>
+                            <p>Within 2 business days.<br>No phone calls. No booking widget.</p>
+                        </div>
+                    </div>
+
+                    <div class="impersonation-notice">
+                        <h4>⚠ Impersonation Notice</h4>
+                        <p>I do not have a Facebook page or profile for this business, and I do not solicit clients or collect payment through Facebook. If you've been contacted by someone claiming to represent me there, <strong>it is not me</strong>. Please verify through this website or my email above before sending any payment or information.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__brand"><a href="index.html" class="nav__logo">Francesca<span>Finch</span></a><p>Book discovery strategy and full-service marketing for indie authors. 10+ years experience across all genres. Based in Scotland, UK.</p></div>
+                <div><h4>Explore</h4><ul><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="process.html">Process</a></li><li><a href="results.html">Results</a></li><li><a href="genres.html">Genres</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
+                <div><h4>Contact</h4><ul><li><a href="mailto:hellofrancescafinch.uk@gmail.com">Email</a></li><li><a href="https://twitter.com/" target="_blank" rel="noopener">X (Twitter)</a></li><li><a href="contact.html">Contact Form</a></li></ul></div>
+                <div><h4>Legal</h4><ul><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li><li><a href="refund.html">Refund</a></li></ul></div>
+            </div>
+            <div class="footer__bottom"><p>&copy; 2025 Francesca Finch. All rights reserved.</p><div><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div></div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
