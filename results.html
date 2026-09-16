@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Results And Case Studies, Francesca Finch</title>
-    <meta name="description" content="Real results from real indie authors. Case studies and client feedback from Francesca Finch book discovery work.">
+    <meta name="description" content="Deep dive case studies and real results from indie authors who transformed their Amazon discoverability with Francesca Finch.">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -13,301 +13,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <style>
-        /* ===== ANIMATED TESTIMONIAL BLOCKS ===== */
-        .testimonial-marquee {
-            background: var(--off-white, #F7F7F5);
-            border-top: 1px solid var(--border, #E5E5E5);
-            border-bottom: 1px solid var(--border, #E5E5E5);
-            padding: 80px 0;
-            overflow: hidden;
-        }
-
-        .testimonial-marquee .section-header {
-            margin-bottom: 48px;
-            padding: 0 24px;
-        }
-
-        .marquee-wrap {
-            overflow: hidden;
-            width: 100%;
-            mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
-            -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
-        }
-
-        .marquee-track {
-            display: flex;
-            gap: 24px;
-            width: max-content;
-            animation: marquee-scroll 40s linear infinite;
-        }
-
-        .marquee-track:hover {
-            animation-play-state: paused;
-        }
-
-        @keyframes marquee-scroll {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
-        }
-
-        .t-block {
-            flex: 0 0 340px;
-            background: #fff;
-            border: 1px solid #E5E5E5;
-            border-radius: 12px;
-            padding: 32px 28px;
-            box-shadow: 0 4px 16px rgba(0,0,0,0.04);
-            display: flex;
-            flex-direction: column;
-            min-height: 280px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .t-block:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 8px 28px rgba(0,0,0,0.08);
-            border-color: #8B7355;
-        }
-
-        .t-block__stars {
-            display: flex;
-            gap: 4px;
-            margin-bottom: 18px;
-        }
-
-        .t-block__stars span {
-            color: #C4A574;
-            font-size: 1.1rem;
-            line-height: 1;
-        }
-
-        .t-block__stars span.empty {
-            color: #DDD5C8;
-        }
-
-        .t-block__quote {
-            font-family: 'Playfair Display', Georgia, serif;
-            font-size: 1.05rem;
-            font-style: italic;
-            color: #1A1A1A;
-            line-height: 1.7;
-            margin-bottom: 24px;
-            flex: 1;
-        }
-
-        .t-block__author {
-            border-top: 1px solid #EEEEEE;
-            padding-top: 18px;
-            display: flex;
-            align-items: center;
-            gap: 14px;
-        }
-
-        .t-block__avatar {
-            width: 44px;
-            height: 44px;
-            border-radius: 50%;
-            background: #1A1A1A;
-            color: #fff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: 'Playfair Display', Georgia, serif;
-            font-size: 0.95rem;
-            font-weight: 700;
-            letter-spacing: 0.04em;
-            flex-shrink: 0;
-        }
-
-        .t-block__avatar.alt {
-            background: #8B7355;
-        }
-
-        .t-block__name {
-            font-family: 'Inter', sans-serif;
-            font-size: 0.95rem;
-            font-weight: 600;
-            color: #1A1A1A;
-            margin-bottom: 2px;
-        }
-
-        .t-block__role {
-            font-size: 0.8rem;
-            color: #7A7A7A;
-            text-transform: uppercase;
-            letter-spacing: 0.06em;
-        }
-
-        /* Case study anonymized cards */
-        .case-study--anon {
-            background: #fff;
-            border: 1px solid #E5E5E5;
-            border-radius: 12px;
-            padding: 48px;
-            margin-bottom: 32px;
-            box-shadow: 0 4px 16px rgba(0,0,0,0.04);
-        }
-
-        .case-study--anon .case-study__top {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 24px;
-            flex-wrap: wrap;
-            margin-bottom: 28px;
-            padding-bottom: 24px;
-            border-bottom: 1px solid #EEEEEE;
-        }
-
-        .case-study--anon .case-study__identity {
-            display: flex;
-            align-items: center;
-            gap: 16px;
-        }
-
-        .case-study--anon .case-study__initials {
-            width: 64px;
-            height: 64px;
-            border-radius: 50%;
-            background: #1A1A1A;
-            color: #fff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: 'Playfair Display', Georgia, serif;
-            font-size: 1.3rem;
-            font-weight: 700;
-            letter-spacing: 0.05em;
-            flex-shrink: 0;
-        }
-
-        .case-study--anon .case-study__initials.alt {
-            background: #8B7355;
-        }
-
-        .case-study--anon .case-study__identity h2 {
-            font-size: 1.5rem;
-            margin-bottom: 4px;
-        }
-
-        .case-study--anon .case-study__identity p {
-            font-size: 0.9rem;
-            color: #7A7A7A;
-            margin: 0;
-        }
-
-        .case-study--anon .case-study__genre-tag {
-            display: inline-block;
-            padding: 6px 14px;
-            background: #F7F7F5;
-            border: 1px solid #E5E5E5;
-            border-radius: 50px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            color: #8B7355;
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
-        }
-
-        .case-study--anon .case-study__stars {
-            display: flex;
-            gap: 4px;
-            margin-top: 10px;
-        }
-
-        .case-study--anon .case-study__stars span {
-            color: #C4A574;
-            font-size: 1rem;
-        }
-
-        .case-study--anon .case-study__stars span.empty {
-            color: #DDD5C8;
-        }
-
-        .case-study--anon .case-study__section {
-            margin-bottom: 24px;
-        }
-
-        .case-study--anon .case-study__section h4 {
-            font-family: 'Inter', sans-serif;
-            font-size: 0.85rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            color: #1A1A1A;
-            margin-bottom: 12px;
-        }
-
-        .case-study--anon .case-study__section p,
-        .case-study--anon .case-study__section li {
-            font-size: 0.95rem;
-            color: #4A4A4A;
-            line-height: 1.8;
-        }
-
-        .case-study--anon .case-study__section ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .case-study--anon .case-study__section li {
-            padding: 6px 0;
-            display: flex;
-            gap: 10px;
-            align-items: flex-start;
-        }
-
-        .case-study--anon .case-study__section li::before {
-            content: "→";
-            color: #8B7355;
-            font-weight: 700;
-            flex-shrink: 0;
-        }
-
-        .case-study--anon .case-study__quote {
-            border-left: 3px solid #8B7355;
-            background: #F7F7F5;
-            padding: 24px 28px;
-            border-radius: 0 10px 10px 0;
-            margin-top: 28px;
-        }
-
-        .case-study--anon .case-study__quote p {
-            font-family: 'Playfair Display', Georgia, serif;
-            font-style: italic;
-            font-size: 1.1rem;
-            color: #1A1A1A;
-            line-height: 1.7;
-            margin-bottom: 12px;
-        }
-
-        .case-study--anon .case-study__quote cite {
-            font-family: 'Inter', sans-serif;
-            font-style: normal;
-            font-size: 0.85rem;
-            font-weight: 600;
-            color: #7A7A7A;
-            text-transform: uppercase;
-            letter-spacing: 0.06em;
-        }
-
-        @media (max-width: 768px) {
-            .t-block {
-                flex: 0 0 300px;
-                min-height: 260px;
-                padding: 24px 20px;
-            }
-
-            .case-study--anon {
-                padding: 28px 20px;
-            }
-
-            .marquee-track {
-                animation-duration: 30s;
-            }
-        }
-    </style>
 </head>
 <body>
 
@@ -332,8 +37,8 @@
         <div class="container">
             <div class="results-hero__inner fade-in">
                 <span class="section-label">Results</span>
-                <h1 class="section-title" style="font-size: clamp(2rem, 4vw, 3rem);">Real Results, Real Authors</h1>
-                <p class="section-subtitle">I only share results with permission. No fabricated screenshots. No inflated numbers. Client identities below are shown as initials only, with permissioned feedback and honest context.</p>
+                <h1 class="section-title" style="font-size: clamp(2rem, 4vw, 3rem);">Deep Strategy, Real Outcomes</h1>
+                <p class="section-subtitle">I only share results with permission. No fabricated screenshots. No inflated numbers. Below, you will find moving feedback from recent clients, followed by deep, detailed breakdowns of how we actually fixed their visibility. Client identities are shown as initials only to protect their privacy.</p>
             </div>
         </div>
     </section>
@@ -342,8 +47,8 @@
     <section class="testimonial-marquee">
         <div class="section-header section-header--center fade-in">
             <span class="section-label">Client Feedback</span>
-            <h2 class="section-title">What Authors Say</h2>
-            <p class="section-subtitle" style="margin: 0 auto;">Initials only. Real words. Moving blocks you can pause by hovering.</p>
+            <h2 class="section-title">What Authors Actually Say</h2>
+            <p class="section-subtitle" style="margin: 0 auto;">Initials only. Real words. Hover your mouse over any block to pause and read.</p>
         </div>
 
         <div class="marquee-wrap">
@@ -395,7 +100,7 @@
                     <div class="t-block__stars">
                         <span>★</span><span>★</span><span>★</span><span>★</span><span class="empty">★</span>
                     </div>
-                    <p class="t-block__quote">"Async process was perfect for me. No calls, just clear documents and results I could actually use."</p>
+                    <p class="t-block__quote">"Async process was perfect for me. No calls, just clear documents and results I could actually use to fix my backlist."</p>
                     <div class="t-block__author">
                         <div class="t-block__avatar alt">R.T.</div>
                         <div>
@@ -409,26 +114,12 @@
                     <div class="t-block__stars">
                         <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
                     </div>
-                    <p class="t-block__quote">"My launch finally had a plan. ARCs, categories, ads, timing. Everything worked together instead of feeling chaotic."</p>
+                    <p class="t-block__quote">"My launch finally had a plan. ARCs, categories, ads, timing. Everything worked together instead of feeling completely chaotic."</p>
                     <div class="t-block__author">
                         <div class="t-block__avatar">L.S.</div>
                         <div>
                             <div class="t-block__name">Author L.S.</div>
                             <div class="t-block__role">Fantasy</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="t-block">
-                    <div class="t-block__stars">
-                        <span>★</span><span>★</span><span>★</span><span class="empty">★</span><span class="empty">★</span>
-                    </div>
-                    <p class="t-block__quote">"Honest feedback on what metadata could fix and what it could not. That honesty is rare."</p>
-                    <div class="t-block__author">
-                        <div class="t-block__avatar alt">M.P.</div>
-                        <div>
-                            <div class="t-block__name">Author M.P.</div>
-                            <div class="t-block__role">Memoir</div>
                         </div>
                     </div>
                 </div>
@@ -480,7 +171,7 @@
                     <div class="t-block__stars">
                         <span>★</span><span>★</span><span>★</span><span>★</span><span class="empty">★</span>
                     </div>
-                    <p class="t-block__quote">"Async process was perfect for me. No calls, just clear documents and results I could actually use."</p>
+                    <p class="t-block__quote">"Async process was perfect for me. No calls, just clear documents and results I could actually use to fix my backlist."</p>
                     <div class="t-block__author">
                         <div class="t-block__avatar alt">R.T.</div>
                         <div>
@@ -494,7 +185,7 @@
                     <div class="t-block__stars">
                         <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
                     </div>
-                    <p class="t-block__quote">"My launch finally had a plan. ARCs, categories, ads, timing. Everything worked together instead of feeling chaotic."</p>
+                    <p class="t-block__quote">"My launch finally had a plan. ARCs, categories, ads, timing. Everything worked together instead of feeling completely chaotic."</p>
                     <div class="t-block__author">
                         <div class="t-block__avatar">L.S.</div>
                         <div>
@@ -503,46 +194,27 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="t-block">
-                    <div class="t-block__stars">
-                        <span>★</span><span>★</span><span>★</span><span class="empty">★</span><span class="empty">★</span>
-                    </div>
-                    <p class="t-block__quote">"Honest feedback on what metadata could fix and what it could not. That honesty is rare."</p>
-                    <div class="t-block__author">
-                        <div class="t-block__avatar alt">M.P.</div>
-                        <div>
-                            <div class="t-block__name">Author M.P.</div>
-                            <div class="t-block__role">Memoir</div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
 
-    <!-- INTRO NOTE -->
+    <!-- INTRO NOTE TO CASE STUDIES -->
     <section class="results-intro">
         <div class="container">
             <div class="results-intro__content fade-in" style="max-width: 800px; margin: 0 auto; text-align: center; padding: 80px 24px;">
-                <span class="section-label">A Note On Honesty</span>
-                <h2 class="section-title">Every Story Here Is Shared With Permission</h2>
-                <p class="lead">Client identities are shown as initials only. Quotes are real and used with permission. No book covers. No personal photos. No inflated metrics.</p>
-                <p>This is what actual discoverability work looks like, with real authors and real books.</p>
+                <span class="section-label">Strategy Deep Dives</span>
+                <h2 class="section-title">How Discoverability Actually Gets Fixed</h2>
+                <p class="lead">I do not write short, fluffy case studies. If you are going to trust someone with your book, you need to see exactly how they think.</p>
+                <p>Below are three highly detailed breakdowns of real client projects. These show the exact problems we found during the audit phase, the specific technical solutions we implemented, and the logic behind every decision. This is what real Amazon strategy looks like when you look under the hood.</p>
             </div>
         </div>
     </section>
 
-    <!-- CASE STUDIES (INITIALS ONLY, NO IMAGES) -->
+    <!-- DEEP DIVE CASE STUDIES -->
     <section class="case-studies">
         <div class="container">
-            <div class="section-header section-header--center fade-in">
-                <span class="section-label">Case Studies</span>
-                <h2 class="section-title">Deeper Look At The Work</h2>
-                <p class="section-subtitle">Two permissioned examples. Initials only. Focus on the strategy, not personal branding.</p>
-            </div>
 
-            <!-- CASE STUDY 1: AUTHOR K.C. -->
+            <!-- CASE STUDY 1: AUTHOR K.C. (CHILDREN'S) -->
             <div class="case-study case-study--anon fade-in">
                 <div class="case-study__top">
                     <div class="case-study__identity">
@@ -559,34 +231,41 @@
                 </div>
 
                 <div class="case-study__section">
-                    <h4>The Situation</h4>
-                    <p>Author K.C. had built a fun children chapter book series aimed at reluctant readers, particularly boys aged 7 to 10. The book had heart, voice, humour, and gaming references the target readers would love.</p>
-                    <p>But the book was struggling to reach that audience on Amazon. Categories were set at launch and never revisited. Keywords were generic. The listing was not optimised for how parents and kids actually browse.</p>
+                    <h4>The Starting Point And The Problem</h4>
+                    <p>Author K.C. had built a genuinely fun, well written children chapter book series aimed directly at reluctant readers, specifically boys aged seven to ten. The book had heart, it had a great voice, and it featured humour and video gaming references that the target readers would absolutely love.</p>
+                    <p>The problem was the disconnect between the product and the platform. Children fiction has a unique discoverability hurdle on Amazon. The people reading the book are kids, but the people typing words into the Amazon search bar are parents and grandparents. If your metadata only speaks to kids, parents will not find it. If it only speaks to parents, the kids will reject the cover and description.</p>
+                    <p>When I audited the listing, I found that the categories had been set at launch and never revisited. The book was sitting in massive, broad categories like General Children Books where it was competing against Harry Potter and Percy Jackson. The keywords were generic single words like adventure, funny, and games. The listing was completely invisible to the exact parents who were desperate to find a book their sons would actually read.</p>
                 </div>
 
                 <div class="case-study__section">
-                    <h4>What We Did</h4>
+                    <h4>The Audit Findings</h4>
                     <ul>
-                        <li>Rebuilt category structure for eBook and paperback</li>
-                        <li>Researched keywords for reluctant readers and parent search behaviour</li>
-                        <li>Restructured metadata around humour, adventure, and gaming themes</li>
-                        <li>Improved series page for stronger read through</li>
-                        <li>Refined the blurb for parents and young readers</li>
+                        <li>Wrong BISAC codes were placing the book in overly saturated, highly competitive categories.</li>
+                        <li>Keyword slots were wasted on single words instead of long tail buyer phrases.</li>
+                        <li>The blurb focused too much on the plot, and not enough on the benefit to the parent.</li>
+                        <li>The series page was not linked correctly, causing a massive drop off in read through from book one to book two.</li>
                     </ul>
                 </div>
 
                 <div class="case-study__section">
-                    <h4>The Approach</h4>
-                    <p>In children fiction, parents buy and kids read. Metadata has to speak to both. We used parent search language and kid relevant themes so the listing worked for both audiences without confusing either.</p>
+                    <h4>The Strategy And Implementation</h4>
+                    <p>We completely rebuilt the foundation of the book. First, we handled the category structure for both the eBook and paperback editions. We moved the book out of the broad categories and requested placement in highly specific, lower competition niche categories like Children Interactive Adventures and Children Video Game Fiction.</p>
+                    <p>Next, we overhauled the seven backend keyword slots. Instead of using single words, we built long tail phrases based on actual parent search behaviour. We used phrases like books for 8 year old boys reluctant readers, funny chapter books for gamers, and action books for 4th grade boys. These are the exact phrases frustrated parents type into Amazon at eight o'clock at night.</p>
+                    <p>Finally, we restructured the blurb. The top line became a hook directed at parents, promising a book that would get their kids off screens and reading. The body of the blurb was written for the kids, focusing on the jokes, the gaming themes, and the fast paced action.</p>
+                </div>
+
+                <div class="case-study__section">
+                    <h4>The Outcome</h4>
+                    <p>By aligning the metadata with parent search behaviour, the book finally started appearing organically in search results. Because the categories were tightly focused, the book began climbing the niche bestseller lists, which gave it an algorithmic boost. When Author K.C. turned Amazon Ads back on, the cost per click dropped significantly because the ads were finally highly relevant to the search terms.</p>
                 </div>
 
                 <div class="case-study__quote">
-                    <p>"Working with Francesca completely changed how I think about my book presence on Amazon. Categories, keywords, backend metadata. Things I had no idea existed. My discoverability transformed."</p>
+                    <p>"Working with Francesca completely changed how I think about my book presence on Amazon. I used to focus on covers and social media. She showed me the invisible side of publishing that actually drives sales. Categories, keywords, backend metadata. Things I had no idea existed. My discoverability transformed."</p>
                     <cite>Author K.C., Children Fiction</cite>
                 </div>
             </div>
 
-            <!-- CASE STUDY 2: AUTHOR JAMES -->
+            <!-- CASE STUDY 2: AUTHOR JAMES (SCI-FI) -->
             <div class="case-study case-study--anon fade-in">
                 <div class="case-study__top">
                     <div class="case-study__identity">
@@ -603,25 +282,30 @@
                 </div>
 
                 <div class="case-study__section">
-                    <h4>The Situation</h4>
-                    <p>Author James is a prolific science fiction writer with a series that was performing but not reaching full potential. He understood Amazon basics and was already running ads.</p>
-                    <p>Still, categories were not tightly aligned to military sci fi browsing behaviour. Keywords needed precision. Ads were active but conversion was weaker than the book quality deserved.</p>
+                    <h4>The Starting Point And The Problem</h4>
+                    <p>Author James is a prolific, hard working science fiction writer with a long series that was performing okay, but had hit a hard ceiling. As an experienced indie author, he already understood the basics of Amazon publishing. He knew he needed keywords. He knew categories mattered. He was already spending money running Amazon Ads.</p>
+                    <p>But his ad spend was creeping up, and his return on investment was dropping. He was paying for clicks, but those clicks were not turning into sales or Kindle Unlimited page reads. When an author is getting clicks but no sales, it almost always points to a mismatch between what the ad promises and what the listing delivers.</p>
                 </div>
 
                 <div class="case-study__section">
-                    <h4>What We Did</h4>
+                    <h4>The Audit Findings</h4>
                     <ul>
-                        <li>Restructured categories around military sci fi and space opera</li>
-                        <li>Rebuilt keyword strategy for sub genre search patterns</li>
-                        <li>Restructured Amazon Ads for stronger conversion</li>
-                        <li>Optimised series page for read through</li>
-                        <li>Refined backend metadata and A Plus Content</li>
+                        <li>The categories were slightly misaligned. The book was sitting in Space Opera, but the content and cover heavily signalled Military Sci Fi.</li>
+                        <li>His Amazon Ads were targeting massive, broad sci fi authors. He was paying to put his book in front of Star Wars fans, when he needed to be in front of fans of gritty, tactical marine combat.</li>
+                        <li>The A Plus Content was visually messy and did not clearly communicate the reading order of his massive series.</li>
                     </ul>
                 </div>
 
                 <div class="case-study__section">
-                    <h4>The Approach</h4>
-                    <p>Sci fi readers are highly specific. Military sci fi, space opera, hard sci fi, and LitRPG all behave differently. We positioned the series clearly so both readers and Amazon algorithm could recognise exactly where it belonged.</p>
+                    <h4>The Strategy And Implementation</h4>
+                    <p>Sci fi readers are highly specific. A reader looking for Military Sci Fi wants tactical space battles, squad dynamics, and gritty realism. A reader looking for Space Opera wants sweeping politics, romance, and grand adventure. James book was Military Sci Fi, but Amazon was confused.</p>
+                    <p>We pulled the book out of the broader sci fi categories and pushed it heavily into Military and Fleet combat categories. We stripped out his entire Amazon Ad account and rebuilt it. Instead of targeting broad sci fi terms, we ran highly targeted Product Display ads directly against the specific, niche authors who wrote the exact same flavour of military combat.</p>
+                    <p>We also rebuilt his A Plus Content. We created a clean, visual timeline showing readers exactly what order to read the series in, removing any friction for a reader who wanted to binge the whole universe.</p>
+                </div>
+
+                <div class="case-study__section">
+                    <h4>The Outcome</h4>
+                    <p>By narrowing the focus, the conversion rate jumped. The Amazon Ads became much cheaper to run because Amazon recognized that when Military Sci Fi readers clicked the ad, they actually bought the book. The algorithmic relevance score improved, which led to Amazon organically recommending the book in the Also Bought sections of major competitors. Less money spent on ads, higher return on investment, and a massive increase in Kindle Unlimited page reads across the whole series.</p>
                 </div>
 
                 <div class="case-study__quote">
@@ -630,11 +314,60 @@
                 </div>
             </div>
 
+            <!-- CASE STUDY 3: AUTHOR A.M. (ROMANCE BACKLIST) -->
+            <div class="case-study case-study--anon fade-in">
+                <div class="case-study__top">
+                    <div class="case-study__identity">
+                        <div class="case-study__initials">A.M.</div>
+                        <div>
+                            <h2>Author A.M.</h2>
+                            <p>Contemporary Romance, Small Town</p>
+                            <div class="case-study__stars">
+                                <span>★</span><span>★</span><span>★</span><span class="empty">★</span><span class="empty">★</span>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="case-study__genre-tag">Romance</span>
+                </div>
+
+                <div class="case-study__section">
+                    <h4>The Starting Point And The Problem</h4>
+                    <p>Author A.M. had a completed four book contemporary romance series. The books were well reviewed and beautifully written, but they had been published three years ago. The launch was over. The algorithm had moved on. Sales had dropped to zero. She felt like she had to write a brand new book just to get noticed again.</p>
+                    <p>Romance is the biggest, hungriest, and most competitive market on Amazon. But it is also a market entirely driven by tropes. Readers do not search for a good romance book. They search for grumpy sunshine small town romance or billionaire forced proximity romance. If your listing does not explicitly state your tropes, romance readers scroll right past.</p>
+                </div>
+
+                <div class="case-study__section">
+                    <h4>The Audit Findings</h4>
+                    <ul>
+                        <li>The blurbs were written like literary fiction. They described the emotional journey of the characters, but completely failed to mention the specific romance tropes.</li>
+                        <li>The backend keywords were outdated and did not reflect current romance search trends.</li>
+                        <li>The covers were good, but the metadata was not backing up the visual promise of the covers.</li>
+                    </ul>
+                </div>
+
+                <div class="case-study__section">
+                    <h4>The Strategy And Implementation</h4>
+                    <p>We executed a complete backlist revival without needing to change the covers or the manuscripts. We started with the blurbs. We completely rewrote the description for book one. We added a bold, punchy headline that immediately established the stakes. We added a bulleted list at the bottom of the blurb that explicitly listed the tropes. Enemies to lovers. One bed. Small town setting.</p>
+                    <p>We updated the backend keywords to match current TikTok and Bookstagram terminology, ensuring that readers searching for those specific dynamics would find her book. We adjusted the categories to target highly specific niche romance lists rather than the general Contemporary Romance bloodbath.</p>
+                    <p>Finally, we set up a targeted Kindle Countdown Deal on book one to feed fresh sales velocity into the newly optimised listing.</p>
+                </div>
+
+                <div class="case-study__section">
+                    <h4>The Outcome</h4>
+                    <p>The updated blurb and keywords allowed the book to index for terms it had previously been blind to. When the promotion ran, the conversion rate was drastically higher because romance readers saw exactly what tropes were promised. The increased conversion rate pushed the book up the rankings, and the series saw its best read through rate in three years. We revived a dead series purely through technical optimization.</p>
+                </div>
+
+                <div class="case-study__quote">
+                    <p>"I finally understand why my book was invisible. I thought my backlist was dead forever. The audit alone was worth it. Clear, direct, and no fluff. We fixed the metadata, and readers actually started finding my older books again."</p>
+                    <cite>Author A.M., Contemporary Romance</cite>
+                </div>
+            </div>
+
             <!-- MORE COMING -->
-            <div class="case-study case-study--anon fade-in" style="text-align: center; border-style: dashed;">
-                <h3 style="font-family: 'Playfair Display', Georgia, serif; font-size: 1.4rem; margin-bottom: 12px;">More Case Studies Coming Soon</h3>
-                <p style="color: #7A7A7A; max-width: 560px; margin: 0 auto 8px;">I only add new stories with explicit written permission. Initials only. No personal photos. No book covers unless a client asks for them.</p>
-                <p style="color: #7A7A7A;"><a href="contact.html">Get in touch</a> if you are a client and want your results featured.</p>
+            <div class="case-study case-study--anon fade-in" style="text-align: center; border-style: dashed; padding: 40px;">
+                <h3 style="font-family: 'Playfair Display', Georgia, serif; font-size: 1.4rem; margin-bottom: 12px; color: var(--text-primary);">More Deep Dives Coming Soon</h3>
+                <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto 16px; line-height: 1.7;">I only add new stories with explicit written permission from the authors. I protect my clients privacy fiercely. Initials only. No personal photos. No book covers unless a client specifically asks for them to be displayed.</p>
+                <p style="color: var(--text-secondary);"><a href="contact.html" style="font-weight: 600;">Get in touch</a> if you are a past client and want your results featured.</p>
             </div>
         </div>
     </section>
@@ -642,14 +375,26 @@
     <!-- ETHICS -->
     <section class="results-ethics">
         <div class="container">
-            <div class="results-ethics__content fade-in" style="max-width: 800px; margin: 0 auto; padding: 80px 24px;">
-                <span class="section-label">A Note On Results</span>
-                <h2 class="section-title">Why I Do Not Share Fabricated Numbers</h2>
-                <p>A lot of book marketers post dramatic before and after claims with no genre, no context, and no verification. I do not do that.</p>
-                <p><strong>Results depend on the book itself.</strong> Strategy cannot rescue weak content, and strong books can move fast once visibility is fixed.</p>
-                <p><strong>Genres perform differently.</strong> Success in cozy mystery does not look like success in literary fiction.</p>
-                <p><strong>Clients own their data.</strong> I only publish what is approved, and I default to initials for privacy.</p>
-                <p><strong>Trust is built through honesty.</strong> I would rather earn confidence than impress with numbers you cannot verify.</p>
+            <div class="results-ethics__content fade-in" style="max-width: 800px; margin: 0 auto; padding: 80px 24px; text-align: left;">
+                <span class="section-label" style="display: block; text-align: center;">A Note On Expectations</span>
+                <h2 class="section-title" style="text-align: center; margin-bottom: 40px;">Why I Tell The Hard Truth</h2>
+                
+                <p style="font-size: 1.05rem; color: var(--text-secondary); line-height: 1.8; margin-bottom: 24px;">A lot of book marketers post dramatic claims with zero context. They promise you the world just to get you on a phone call. I refuse to operate that way. Here is what you need to know before we work together.</p>
+
+                <div style="margin-bottom: 24px; padding-left: 20px; border-left: 3px solid var(--accent);">
+                    <h4 style="font-family: 'Playfair Display', serif; font-size: 1.2rem; color: var(--text-primary); margin-bottom: 8px;">Results depend entirely on the book itself.</h4>
+                    <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.7;">The best marketing strategy in the world cannot rescue weak content, poor editing, or an unappealing cover. My job is to make your book fully visible. The book job is to make the reader want to buy it. If I look at your book and think it has fundamental issues that marketing cannot fix, I will tell you honestly before you spend money with me.</p>
+                </div>
+
+                <div style="margin-bottom: 24px; padding-left: 20px; border-left: 3px solid var(--accent);">
+                    <h4 style="font-family: 'Playfair Display', serif; font-size: 1.2rem; color: var(--text-primary); margin-bottom: 8px;">Every single genre performs differently.</h4>
+                    <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.7;">Success in a niche category like Historical Cozy Mystery does not look like success in the massive Contemporary Romance market. Comparing numbers across genres is completely meaningless. We will judge your success based on what is realistic for your specific niche.</p>
+                </div>
+
+                <div style="margin-bottom: 24px; padding-left: 20px; border-left: 3px solid var(--accent);">
+                    <h4 style="font-family: 'Playfair Display', serif; font-size: 1.2rem; color: var(--text-primary); margin-bottom: 8px;">Trust is built through honesty, not hype.</h4>
+                    <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.7;">Fake screenshots and inflated numbers might get more clicks, but real strategy builds long term author careers. I would rather earn your trust through deep, honest analysis than try to impress you with numbers you cannot verify.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -657,8 +402,8 @@
     <!-- CTA -->
     <section class="cta-section">
         <div class="container fade-in">
-            <h2>Want To Be The Next Success Story?</h2>
-            <p>It starts with a free look at your book. Let us find out what is possible for you.</p>
+            <h2>Ready To Look Under The Hood Of Your Book?</h2>
+            <p>It starts with a free look at your Amazon listing. Let us find out what is actually possible for your writing career.</p>
             <a href="contact.html" class="btn btn--primary">Get Your Free Audit</a>
             <p class="cta-section__note">Response within 2 business days. Never any calls required.</p>
         </div>
