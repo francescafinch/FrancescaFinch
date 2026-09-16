@@ -4823,3 +4823,301 @@ section {
         z-index: 1001 !important;
     }
 }
+
+
+/* ============================================
+   ANIMATED TESTIMONIAL BLOCKS (RESULTS PAGE)
+   ============================================ */
+
+.testimonial-marquee {
+    background: var(--off-white, #F7F7F5);
+    border-top: 1px solid var(--border, #E5E5E5);
+    border-bottom: 1px solid var(--border, #E5E5E5);
+    padding: 80px 0;
+    overflow: hidden;
+}
+
+.testimonial-marquee .section-header {
+    margin-bottom: 48px;
+    padding: 0 24px;
+}
+
+.marquee-wrap {
+    overflow: hidden;
+    width: 100%;
+    mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+}
+
+.marquee-track {
+    display: flex;
+    gap: 24px;
+    width: max-content;
+    animation: marquee-scroll 40s linear infinite;
+}
+
+.marquee-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes marquee-scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+.t-block {
+    flex: 0 0 340px;
+    background: #fff;
+    border: 1px solid #E5E5E5;
+    border-radius: 12px;
+    padding: 32px 28px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.04);
+    display: flex;
+    flex-direction: column;
+    min-height: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.t-block:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 28px rgba(0,0,0,0.08);
+    border-color: #8B7355;
+}
+
+.t-block__stars {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 18px;
+}
+
+.t-block__stars span {
+    color: #C4A574;
+    font-size: 1.1rem;
+    line-height: 1;
+}
+
+.t-block__stars span.empty {
+    color: #DDD5C8;
+}
+
+.t-block__quote {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.05rem;
+    font-style: italic;
+    color: #1A1A1A;
+    line-height: 1.7;
+    margin-bottom: 24px;
+    flex: 1;
+}
+
+.t-block__author {
+    border-top: 1px solid #EEEEEE;
+    padding-top: 18px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.t-block__avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #1A1A1A;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    flex-shrink: 0;
+}
+
+.t-block__avatar.alt {
+    background: #8B7355;
+}
+
+.t-block__name {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #1A1A1A;
+    margin-bottom: 2px;
+}
+
+.t-block__role {
+    font-size: 0.8rem;
+    color: #7A7A7A;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+/* Anonymized case study cards */
+.case-study--anon {
+    background: #fff;
+    border: 1px solid #E5E5E5;
+    border-radius: 12px;
+    padding: 48px;
+    margin-bottom: 32px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.04);
+}
+
+.case-study--anon .case-study__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-bottom: 28px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.case-study--anon .case-study__identity {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.case-study--anon .case-study__initials {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: #1A1A1A;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    flex-shrink: 0;
+}
+
+.case-study--anon .case-study__initials.alt {
+    background: #8B7355;
+}
+
+.case-study--anon .case-study__identity h2 {
+    font-size: 1.5rem;
+    margin-bottom: 4px;
+}
+
+.case-study--anon .case-study__identity p {
+    font-size: 0.9rem;
+    color: #7A7A7A;
+    margin: 0;
+}
+
+.case-study--anon .case-study__genre-tag {
+    display: inline-block;
+    padding: 6px 14px;
+    background: #F7F7F5;
+    border: 1px solid #E5E5E5;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #8B7355;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.case-study--anon .case-study__stars {
+    display: flex;
+    gap: 4px;
+    margin-top: 10px;
+}
+
+.case-study--anon .case-study__stars span {
+    color: #C4A574;
+    font-size: 1rem;
+}
+
+.case-study--anon .case-study__stars span.empty {
+    color: #DDD5C8;
+}
+
+.case-study--anon .case-study__section {
+    margin-bottom: 24px;
+}
+
+.case-study--anon .case-study__section h4 {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #1A1A1A;
+    margin-bottom: 12px;
+}
+
+.case-study--anon .case-study__section p,
+.case-study--anon .case-study__section li {
+    font-size: 0.95rem;
+    color: #4A4A4A;
+    line-height: 1.8;
+}
+
+.case-study--anon .case-study__section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.case-study--anon .case-study__section li {
+    padding: 6px 0;
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.case-study--anon .case-study__section li::before {
+    content: "→";
+    color: #8B7355;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.case-study--anon .case-study__quote {
+    border-left: 3px solid #8B7355;
+    background: #F7F7F5;
+    padding: 24px 28px;
+    border-radius: 0 10px 10px 0;
+    margin-top: 28px;
+}
+
+.case-study--anon .case-study__quote p {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #1A1A1A;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+.case-study--anon .case-study__quote cite {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #7A7A7A;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+@media (max-width: 768px) {
+    .t-block {
+        flex: 0 0 300px;
+        min-height: 260px;
+        padding: 24px 20px;
+    }
+
+    .case-study--anon {
+        padding: 28px 20px;
+    }
+
+    .marquee-track {
+        animation-duration: 30s;
+    }
+}
